@@ -1,0 +1,174 @@
+ * {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+ }
+
+ body {
+     font-family: Arial, sans-serif;
+     background-color: rgb(200, 229, 233);
+ }
+
+ .product-container {
+     display: flex;
+     padding: 10px;
+     margin: 50px 200px;
+     gap: 0;
+     box-shadow: 0 0 10px rgb(28, 29, 30);
+ }
+
+ .product-image img {
+     width: 300px;
+     height: 500px;
+ }
+
+
+ .product-details {
+     width: 500px;
+     height: 500px;
+     padding: 40px;
+     background-color: aliceblue;
+ }
+
+
+ h1 {
+     font-size: 30px;
+     font-weight: bold;
+     margin-bottom: 10px;
+ }
+
+ h2 {
+     font-size: 20px;
+     font-weight: bold;
+     margin-bottom: 10px;
+ }
+
+ .product-description {
+     margin-top: 10px;
+     text-align: justify;
+     margin-bottom: 20px;
+     font-size: 15px;
+     font-style: italic;
+ }
+
+ li {
+     font-size: 15px;
+     font-style: italic;
+     text-align: justify;
+ }
+
+ h3 {
+     color: green;
+     font-size: 17px;
+ }
+
+ #size {
+     width: 150px;
+     height: 30px;
+
+ }
+
+ .size-options,
+ .color-options,
+ .quantity-selector {
+     margin-bottom: 10px;
+ }
+
+ .quantity-selector input {
+     width: 120px;
+     height: 25px;
+ }
+
+ .both {
+     display: flex;
+     flex-direction: row;
+     gap: 15px;
+ }
+
+ .size {
+     display: flex;
+     flex-direction: column;
+ }
+
+ .size input[type="radio"] {
+     display: none;
+ }
+
+ .size-options,
+ .quantity-selector {
+     margin-top: 40px;
+ }
+
+ .size option {
+     padding: 10px;
+     border-radius: 1px solid #ccc;
+     cursor: pointer;
+ }
+
+ .size input[type="radio"]:checked+option {
+     background-color: black;
+     color: white;
+ }
+
+ .color-options input[type="radio"]:checked+label {
+     border-bottom: 16px solid #98d34a;
+ }
+
+ .selected {
+     background-color: black;
+     color: white;
+ }
+
+ .color-options label {
+     border-radius: 50%;
+     display: inline-block;
+     width: 20px;
+     height: 20px;
+     margin: 5px;
+     cursor: pointer;
+     transition: background-color 0.2s;
+     border-bottom: 0.2;
+ }
+
+ .color-options input[type="radio"] {
+     appearance: none;
+     margin: 0;
+     padding: 0;
+     border: none;
+     width: 0;
+     height: 0;
+ }
+
+ .color {
+     margin-left: 100px;
+ }
+
+ .color-options {
+     appearance: none;
+     background-color: transparent;
+     border: none;
+     padding: 10px;
+ }
+
+ .color-options input:checked {
+     background-color: black;
+ }
+
+ button {
+     margin-top: 30px;
+     margin-bottom: 50px;
+     margin-left: 100px;
+     background-color: #007BFF;
+     color: white;
+     padding: 10px 10px;
+     border-radius: 5px;
+     cursor: pointer;
+     width: 200px;
+     height: 35px;
+
+ }
+
+ button:hover {
+     background-color: black;
+     color: white;
+ }
